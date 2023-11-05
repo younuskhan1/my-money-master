@@ -1,0 +1,82 @@
+#heading-moner-master {
+    color: #31A5AC;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#money-master-section {
+    display: flex;
+    gap: 6%;
+    margin: 0px 50px 20px;
+}
+
+#money-master-image {
+    width: 100%;
+}
+
+#income-div {
+    width: 100%;
+    background: #F8F8F8;
+}
+
+#image-div {
+    width: 100%;
+}
+
+#income {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#monthly-income,
+#monthly-food,
+#monthly-rent,
+#monthly-cloth {
+    text-align: center;
+}
+
+#income-span,
+#food-span,
+#rent-span,
+#cloth-span {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+#input-income,
+#input-food,
+#input-rent,
+#input-cloth {
+    border-radius: 2px;
+    background: #DCDCDC;
+    border: 0;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#expenses {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 20px;
+}
