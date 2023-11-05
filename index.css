@@ -1,10 +1,9 @@
-#heading-moner-master {
+#heading-money-master {
     color: #31A5AC;
     font-size: 40px;
-    font-style: normal;
     text-align: center;
-    font-weight: 700;
-    line-height: normal;
+    font-weight: bolder;
+
 }
 
 #money-master-section {
@@ -31,7 +30,7 @@
     text-align: center;
     font-family: Roboto;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: bolder;
     width: 100%;
     margin-top: 50px;
 }
@@ -39,8 +38,7 @@
 #monthly-income,
 #monthly-food,
 #monthly-rent,
-#monthly-cloth,
-#monthly-save {
+#monthly-cloth {
     text-align: center;
 }
 
@@ -131,4 +129,9 @@ input::-webkit-inner-spin-button {
 
 #saving-percent {
     font-weight: bolder;
+}
+
+#monthly-save {
+    text-align: center;
+    font-size: 18px;
 }
