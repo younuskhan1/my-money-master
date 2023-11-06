@@ -8,7 +8,7 @@
 
 #money-master-section {
     display: flex;
-    gap: 6%;
+    gap: 4%;
     margin: 0px 50px 50px;
 }
 
@@ -93,6 +93,7 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #button-holder {
@@ -125,6 +126,7 @@ input::-webkit-inner-spin-button {
     font-style: normal;
     font-weight: 700;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 #saving-percent {
