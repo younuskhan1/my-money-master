@@ -25,9 +25,7 @@ document.getElementById("calculate-button").addEventListener("click", function (
             document.getElementById("total-expense-amount").innerText = totalMonthlyExpenses;
             document.getElementById("total-balance-amount").innerText = monthlyRemainingBalance;
         }
-
     }
-
 })
 
 function getBalanceAmount(balanceFieldId) {
@@ -44,7 +42,6 @@ document.getElementById("saving-button").addEventListener("click", function () {
         alert("Please provide a positive numeric values");
     } else {
         const savingAmount = (monthlyTotalIncome * savingPercentage) / 100;
-
         const ultimateRemainingBalance = remainingBalanceAfterExpenses - savingAmount;
         if (ultimateRemainingBalance < 0) {
             alert("Saving amount cannot be more than remaining balance after expenses.")
@@ -52,7 +49,9 @@ document.getElementById("saving-button").addEventListener("click", function () {
             document.getElementById("Saving Amount").innerText = savingAmount;
             document.getElementById("Remaining Balance").innerText = ultimateRemainingBalance;
         }
-
     }
+})
 
+document.getElementById("reset-button").addEventListener("click", function () {
+    location.reload()
 })

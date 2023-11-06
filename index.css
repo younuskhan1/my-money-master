@@ -32,7 +32,7 @@
     font-size: 22px;
     font-weight: bolder;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #monthly-income,
@@ -113,7 +113,8 @@ input::-webkit-inner-spin-button {
     margin-right: 15px;
 }
 
-#saving-button {
+#saving-button,
+#reset-button {
     border-radius: 4px;
     border: 0px;
     background: #59A5FF;
@@ -136,4 +137,11 @@ input::-webkit-inner-spin-button {
 #monthly-save {
     text-align: center;
     font-size: 18px;
+}
+
+#reset-div {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
