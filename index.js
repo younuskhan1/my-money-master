@@ -6,7 +6,6 @@ function getInputMoney(inputFieldId) {
     return inputMoney;
 }
 
-
 document.getElementById("calculate-button").addEventListener("click", function () {
     const monthlyTotalIncome = getInputMoney("input-income");
     const monthlyFoodExpenses = getInputMoney("input-food");
@@ -44,7 +43,7 @@ document.getElementById("saving-button").addEventListener("click", function () {
         const savingAmount = (monthlyTotalIncome * savingPercentage) / 100;
         const ultimateRemainingBalance = remainingBalanceAfterExpenses - savingAmount;
         if (ultimateRemainingBalance < 0) {
-            alert("Saving amount cannot be more than remaining balance after expenses.")
+            alert("Please provide a reasonable percentage amount because saving amount cannot be more than remaining balance after expenses.")
         } else {
             document.getElementById("Saving Amount").innerText = savingAmount;
             document.getElementById("Remaining Balance").innerText = ultimateRemainingBalance;
