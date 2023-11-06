@@ -16,6 +16,7 @@ console.log(monthlyTotalIncome);
 // when I click the calculation button then the monthlyTotalIncome global
 // variable is reassigned/updated but It does not show it's updated value because
 //  it is placed outside of calculation button's event handler.
+// you can see the scope in javascript at the khata of conceptual session - 2nd of 6th batch.
 
 
 document.getElementById("calculate-button").addEventListener("click", function () {
