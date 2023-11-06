@@ -63,6 +63,7 @@
     width: 200px;
     height: 35px;
     text-align: center;
+    outline: none;
 }
 
 input::-webkit-inner-spin-button {
@@ -111,6 +112,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
+    outline: none;
 }
 
 #saving-button,
