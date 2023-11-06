@@ -4,8 +4,6 @@ function getInputMoney(inputFieldId) {
     const inputMoney = parseFloat(inputMoneyString);
     inputField.value = "";
     return inputMoney;
-
-
 }
 
 document.getElementById("calculate-button").addEventListener("click", function () {
@@ -16,7 +14,7 @@ document.getElementById("calculate-button").addEventListener("click", function (
     if ((monthlyTotalIncome < 0) || (monthlyFoodExpenses < 0) || (monthlyRentExpenses < 0) || (monthlyClothExpenses < 0)) {
         alert("Please provide positive values for all input fields.")
     } else if (isNaN(monthlyTotalIncome) || isNaN(monthlyFoodExpenses) || isNaN(monthlyRentExpenses) || isNaN(monthlyClothExpenses)) {
-        alert("Please fill up the all input fields.");
+        alert("Please fill up the all input fields with positive numeric values.");
     } else {
         const totalMonthlyExpenses = monthlyFoodExpenses + monthlyRentExpenses + monthlyClothExpenses;
         if (monthlyTotalIncome < totalMonthlyExpenses) {
