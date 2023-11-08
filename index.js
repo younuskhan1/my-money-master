@@ -57,7 +57,7 @@ document.getElementById("saving-button").addEventListener("click", function () {
     // Reused here the monthlyTotalIncome global variable efficiently.
     const savingPercentage = getInputMoney("input-save");
     if (isNaN(remainingBalanceAfterExpenses)) {
-        alert("You have to fill up the above form completely at first.");
+        alert("firstly, You have to fill up the above form completely.");
     } else {
         const monthlyIncome = monthlyTotalIncome;
         console.log(monthlyIncome);
