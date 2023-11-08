@@ -47,7 +47,6 @@ function getBalanceAmount(balanceFieldId) {
     return balanceMoney;
 }
 document.getElementById("saving-button").addEventListener("click", function () {
-
     // second option to get the value of monthlyTotalIncome by using
     //  a function but we cannot empty the input field in this way.
     // not 53 no line code but this way >>> (const monthlyTotalIncome = getInputMoney("input-income");)
@@ -56,22 +55,26 @@ document.getElementById("saving-button").addEventListener("click", function () {
     //  first and the best option to get the value of monthlyTotalIncome from 
     // global variable and we can empty the input field in this way.
     // Reused here the monthlyTotalIncome global variable efficiently.
-
-    const monthlyIncome = monthlyTotalIncome
-    console.log(monthlyIncome);
     const savingPercentage = getInputMoney("input-save");
-    if (savingPercentage < 0 || isNaN(savingPercentage)) {
-        alert("Please provide a positive numeric values");
+    if (isNaN(remainingBalanceAfterExpenses)) {
+        alert("You have to fill up the above form completely at first.");
     } else {
-        const savingAmount = (monthlyIncome * savingPercentage) / 100;
-        const ultimateRemainingBalance = remainingBalanceAfterExpenses - savingAmount;
-        if (ultimateRemainingBalance < 0) {
-            alert("Please provide a reasonable percentage amount because saving amount cannot be more than remaining balance after expenses.")
+        const monthlyIncome = monthlyTotalIncome;
+        console.log(monthlyIncome);
+        if (savingPercentage < 0 || isNaN(savingPercentage)) {
+            alert("Please provide a positive numeric values at percentage input field.");
         } else {
-            document.getElementById("Saving Amount").innerText = savingAmount;
-            document.getElementById("Remaining Balance").innerText = ultimateRemainingBalance;
+            const savingAmount = (monthlyIncome * savingPercentage) / 100;
+            const ultimateRemainingBalance = remainingBalanceAfterExpenses - savingAmount;
+            if (ultimateRemainingBalance < 0) {
+                alert("Please provide a reasonable percentage amount because saving amount cannot be more than remaining balance after expenses.")
+            } else {
+                document.getElementById("Saving Amount").innerText = savingAmount;
+                document.getElementById("Remaining Balance").innerText = ultimateRemainingBalance;
+            }
         }
     }
+
 })
 
 document.getElementById("reset-button").addEventListener("click", function () {
